@@ -1,0 +1,17 @@
+{% extends "base.html" %} 
+{% block content %} 
+
+{% for data in meals %}
+  <div class="card" style="width: 18rem">
+    <img src={{data.strMealThumb}} class="card-img-top" alt="Mealpic" />
+    <div class="card-body">
+      <h5 class="card-title">{{data.strMeal}}</h5>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the bulk of
+        the card's content.
+      </p>
+    </div>
+  </div>
+{% endfor %}
+
+{% endblock %}
